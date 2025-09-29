@@ -11,14 +11,24 @@ const PageContainer = styled.div`
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
+
+  @media (max-width: 768px) {
+    padding: 0 10px;
+  }
 `;
 
 const MainLayout = styled.div`
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 40px;
+
   @media (max-width: 1024px) {
-    grid-template-columns: 1fr; // Stack on mobile
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  @media (max-width: 768px) {
+    gap: 15px;
   }
 `;
 
@@ -26,6 +36,10 @@ const RightContent = styled.div`
   display: flex;
   flex-direction: column;
   gap: 40px;
+
+  @media (max-width: 768px) {
+    gap: 20px;
+  }
 `;
 
 function App() {

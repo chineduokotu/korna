@@ -7,6 +7,11 @@ const CardWrapper = styled.article`
   flex-direction: row;
   margin-bottom: 30px;
   gap: 15px;
+
+  @media (max-width: 768px) {
+    gap: 10px;
+    margin-bottom: 20px;
+  }
 `;
 
 const Title = styled.h2`
@@ -43,6 +48,11 @@ const Image = styled.img`
   height: 150px;
   object-fit: cover;
   flex-shrink: 0;
+
+  @media (max-width: 768px) {
+    width: 120px;
+    height: 90px;
+  }
 `;
 
 const Stats = styled.div`

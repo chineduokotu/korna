@@ -34,6 +34,10 @@ const SearchBar = styled.input`
   border: 1px solid #ddd;
   border-radius: 20px;
   width: 200px;
+
+  @media (max-width: 768px) {
+    width: 120px;
+  }
 `;
 
 const RightSection = styled.div`
