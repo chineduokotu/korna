@@ -17,12 +17,20 @@ const CardWrapper = styled.article`
 const Title = styled.h2`
   font-size: 20px;
   margin-bottom: 5px;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 `;
 
 const Subtitle = styled.p`
   font-size: 14px;
   color: #666;
   margin-bottom: 10px;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 `;
 
 const AuthorInfo = styled.div`
@@ -31,12 +39,21 @@ const AuthorInfo = styled.div`
   gap: 10px;
   font-size: 12px;
   color: #666;
+
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
 `;
 
 const AuthorAvatar = styled.img`
   width: 24px;
   height: 24px;
   border-radius: 50%;
+
+  @media (max-width: 768px) {
+    width: 20px;
+    height: 20px;
+  }
 `;
 
 const TextWrapper = styled.div`
@@ -60,6 +77,10 @@ const Stats = styled.div`
   gap: 10px;
   font-size: 12px;
   color: #666;
+
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
 `;
 
 function ArticleCard({ title, subtitle, author, date, views, comments, image }) {

@@ -17,6 +17,11 @@ const Tab = styled.button`
   border-bottom: ${props => props.active ? '2px solid #000' : 'none'};
   color: ${props => props.active ? '#000' : '#666'};
 
+  @media (max-width: 768px) {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
   &:hover {
     color: #000;
   }

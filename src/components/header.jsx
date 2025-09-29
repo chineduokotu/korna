@@ -10,23 +10,41 @@ const HeaderWrap = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px 15px;
+  }
 `;
 
 const LeftSection = styled.div`
   display: flex;
   align-items: center;
   gap: 20px;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 `;
 
 const MenuIcon = styled.div`
   font-size: 1.5rem;
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
 `;
 
 const Title = styled.h1`
   margin: 0;
   font-size: 1.5rem;
   font-weight: 700;
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
 `;
 
 const SearchBar = styled.input`
@@ -36,7 +54,8 @@ const SearchBar = styled.input`
   width: 200px;
 
   @media (max-width: 768px) {
-    width: 120px;
+    width: 100%;
+    max-width: 300px;
   }
 `;
 
@@ -44,11 +63,19 @@ const RightSection = styled.div`
   display: flex;
   align-items: center;
   gap: 15px;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 `;
 
 const Icon = styled.div`
   font-size: 1.2rem;
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 `;
 
 export default function Header() {
